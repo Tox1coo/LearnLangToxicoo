@@ -1,0 +1,76 @@
+{
+    "menu": "Menu",
+    "pages": {
+        "index": "Home",
+        "dictionary": "Dictionary",
+        "cards": "My Cards"
+    },
+    "user": {
+        "login": "Login",
+        "register": "Register"
+    },
+    "home": {
+        "hero": {
+            "create": "Create | your cards",
+            "reach": "Reach  | your goal",
+            "complete-text": "Complete | your dictionary",
+            "description": "Everything is created for self-study, everything is in your hands!"
+        },
+        "information-block": {
+            "build": {
+                "title": "Build cards!",
+                "text": "Have you ever wondered how easy it would be to memorize new words if you had a personalized set of flashcards? You can create your own flashcards with the words, phrases and expressions you want to remember and repeat them until they become part of your active vocabulary.\nDon't waste time and start improving your vocabulary right now!"
+            },
+            "associations": {
+                "title": "Vivid associations",
+                "text": "Photo associations help you memorize new words with ease. When we associate a new word with an image, we create a stronger connection. Use this method to create memorable connections between words and their meanings and improve your vocabulary!"
+            }
+        }
+    },
+    "cards": {
+        "flip": "Flip"
+    },
+    "translate": {
+        "translate": "Translate",
+        "input-dictionary": "Enter a word or phrase...",
+        "redirect": "Go to word",
+        "btn-search": "Search"
+
+    },
+    "title": {
+        "comment": "Comment",
+        "examples": "Examples",
+        "search": "Search and learn the words you need",
+        "history": "History asked"
+    },
+    "subtitle": {
+        "search": "Everything is created for your comfort"
+    },
+    "languages": {
+        "RU": "Russian",
+        "EN": "English",
+        "IT": "Italian",
+        "CH": "Chinese",
+        "DE": "German",
+        "EL": "Greek",
+        "UK": "Ukrainian",
+        "ES": "Spanish",
+        "FR": "French",
+        "LA": "Latvian",
+        "KK": "Kazakh"
+    },
+    "history": {
+        "empty": "History asked for desolate"
+    },
+    "footer": {
+        "start": "Start"
+    },
+    "copyright": {
+        "right": "All rights reserved",
+        "developer": "Website developed by Toxicoo, 2023"
+    },
+    "vk": "Vkontakte",
+    "telegram": "Telegram"
+
+
+}

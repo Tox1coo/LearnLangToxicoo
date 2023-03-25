@@ -32,7 +32,7 @@
 
 <script setup lang="ts">
 
-const cardExample: wordInterface = {
+const cardExample: WordInterface = {
   wid: 1,
   original_word: 'Dictionary',
   translate_word: 'Словарь',

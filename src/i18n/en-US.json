@@ -41,7 +41,11 @@
         "comment": "Comment",
         "examples": "Examples",
         "search": "Search and learn the words you need",
-        "history": "History asked"
+        "history": "History asked",
+        "form": {
+            "login": "Sign In",
+            "auth": "Sign Up"
+        }
     },
     "subtitle": {
         "search": "Everything is created for your comfort"
@@ -70,7 +74,21 @@
         "developer": "Website developed by Toxicoo, 2023"
     },
     "vk": "Vkontakte",
-    "telegram": "Telegram"
+    "telegram": "Telegram",
+    "form": {
+        "name": "Enter your name",
+        "email": "Enter your email",
+        "password": "Enter the password",
+        "repeat_password": "Repeat the password",
+        "submit": "{submit}",
+        "errors": {
+            "format":"Invalid format",
+            "required": "This field is required",
+            "min_length": "Minimum field size {min}",
+            "alpha": "This field must contain only letters",
+            "same_as": "This field must same as field password"
+        }
+    }
 
 
 }

@@ -21,7 +21,7 @@
 <script lang="ts" setup>
 
   interface IProps {
-    searchResults: wordResultInterface[]
+    searchResults: WordResultInterface[]
   }
 defineProps<IProps>()
 </script>

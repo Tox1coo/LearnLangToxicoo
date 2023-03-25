@@ -27,7 +27,7 @@ interface visible {
 let originalLanguage:string = $ref('RU');
 let translateLanguage:string = $ref('EN');
 let isVisibleDropDown:boolean = $ref(false);
-const langList:languageInterface[] = [
+const langList:LanguageInterface[] = [
   {
     lid: 1,
     abbr: "RU",
@@ -85,11 +85,11 @@ const langList:languageInterface[] = [
   }
 ]
 let takeVariantLang:string = $ref('')
-const sliceLangList = computed<languageInterface[][]>(() => {
+const sliceLangList = computed<LanguageInterface[][]>(() => {
   let count:number = Math.ceil(langList.length / 2);
-  const firstTable:languageInterface[] = langList.slice(0, count);
-  const secondTable:languageInterface[] = langList.slice(count, langList.length);
-  const sliceLangList:languageInterface[][]  = [];
+  const firstTable:LanguageInterface[] = langList.slice(0, count);
+  const secondTable:LanguageInterface[] = langList.slice(count, langList.length);
+  const sliceLangList:LanguageInterface[][]  = [];
   sliceLangList.push(firstTable);
   sliceLangList.push(secondTable);
   return sliceLangList;

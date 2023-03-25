@@ -13,7 +13,7 @@
 import {Ref} from "vue";
 let word:Ref<string> = ref('');
 let visibleSearch: boolean = $ref(false);
-const words:wordResultInterface[] = [
+const words:WordResultInterface[] = [
   {
     translate_word: ['build'],
     original_word:'Строитель',

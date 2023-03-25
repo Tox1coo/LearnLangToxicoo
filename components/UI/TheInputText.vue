@@ -1,12 +1,19 @@
 <template>
-  <input  :type="typeInput" @input="$emit('update:modelValue', $event.target.value)" :placeholder="placeholderInput" class="input">
+  <div>
+    <input ref="input" :class="{'input--error': isError, 'input--correct': !isInvalid}" :type="typeInput" @input="$emit('update:modelValue', $event.target.value), $emit('changeValue', $event.target.value)" :placeholder="placeholderInput" class="input">
+    <slot />
+  </div>
 </template>
 
 <script setup lang="ts">
+
+const input = ref<HTMLInputElement | null>(null);
+let isVisiblePassword = $ref<boolean>(false)
   defineProps({
     modelValue: {
       type: String,
-      required: true
+      required: false,
+      default: ''
     },
     typeInput: {
       type: String,
@@ -15,8 +22,22 @@
     placeholderInput: {
       type: String,
       default: 'Enter the text'
+    },
+    isError: {
+      type: Boolean,
+      default: false
+    },
+    isInvalid: {
+      type: Boolean,
+      default: false
     }
   })
+
+
+  const showPass = (e: Event) => {
+    if(!isVisiblePassword) {
+    }
+  }
 </script>
 
 <style lang="scss" scoped>
@@ -27,5 +48,30 @@
   padding-left: 3rem;
   font-size: 2rem;
   font-family: Roboto sans-serif;
+  position: relative;
+  &--error {
+    border: 2px solid red !important;
+    animation-name: shake;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+    animation-duration: 0.35s;
+  }
+  &--correct {
+    border: 2px solid $primary-accent !important;
+  }
+}
+
+@keyframes shake  {
+  0%{
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+
+  }
 }
 </style>

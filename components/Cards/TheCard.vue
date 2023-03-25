@@ -11,7 +11,7 @@
 <script lang="ts" setup>
   const props = defineProps({
     card: {
-      type: Object as () => wordInterface,
+      type: Object as () => WordInterface,
       required: true
     },
     cardDisable: {
@@ -20,7 +20,7 @@
     }
   })
 let cardFlipped = $ref(false);
-const cardFront: cardFrontInterface = {
+const cardFront: CardFrontInterface = {
     original_word: props.card.original_word,
     transcription: props.card.transcription,
     sound: {
@@ -32,7 +32,7 @@ const cardFront: cardFrontInterface = {
   image: props.card.image,
 
 }
-const cardBack:cardBackInterface  = {
+const cardBack:CardBackInterface  = {
   translate_word: props.card?.translate_word,
   example: props.card?.example,
   comment: props.card?.comment,

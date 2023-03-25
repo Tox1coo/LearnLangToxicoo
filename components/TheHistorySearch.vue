@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 
-  const historyWords:wordResultInterface[] = [
+  const historyWords:WordResultInterface[] = [
     {
       translate_word: ['build'],
       original_word:'Строить',

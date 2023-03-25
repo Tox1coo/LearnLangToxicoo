@@ -16,11 +16,10 @@
 </template>
 
 <script lang="ts" setup>
-import TheSound from "~/components/UI/TheSound.vue";
 
 defineProps({
   cardInfoFront: {
-    type: Object as () => cardFrontInterface,
+    type: Object as () => CardFrontInterface,
     required: true
   }
 })

@@ -14,12 +14,7 @@
   </main>
 
   <UITheModal v-model:show="showModal">
-    <template v-if="typeFormOpen == 'login'">
-      dadsadada
-    </template>
-    <template v-else-if="typeFormOpen == 'register'">
-      афвыффвыфвыф
-    </template>
+      <FormTheFormUser />
   </UITheModal>
 </template>
 <!--TODO: сделать регистрацию-->
@@ -30,7 +25,7 @@ import {Ref} from "vue";
 let mainIsActive:Ref<boolean> = ref(false);
 let showModal:Ref<boolean> = ref(false);
 
-let typeFormOpen: Ref<string> = ref('login');
+let typeFormOpen: Ref<string> = ref('auth');
 </script>
 
 <style lang="scss">

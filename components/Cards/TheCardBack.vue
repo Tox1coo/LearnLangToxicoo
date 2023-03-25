@@ -17,7 +17,7 @@
 
 <script lang="ts" setup>
 interface CardBack{
-  cardInfoBack:cardBackInterface
+  cardInfoBack:CardBackInterface
 }
 
 defineProps<CardBack>()

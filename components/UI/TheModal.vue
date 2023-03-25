@@ -1,5 +1,5 @@
 <template>
-  <div @click.stop="$emit('update:show', false)" v-show="show" class="modal">
+  <div @click.stop="$emit('update:show', false)" v-if="show" class="modal">
     <div @click.stop class="modal__inner">
         <slot/>
     </div>
@@ -28,8 +28,8 @@
   left: 0;
   background-color: rgba($primary-background, 0.8);
   &__inner {
-    width: 50%;
-    height: 50%;
+    min-width: 800px;
+    min-height: fit-content;
     background-color: #fff;
     border-radius: 2rem;
     padding: 3rem;

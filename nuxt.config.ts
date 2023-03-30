@@ -3,7 +3,8 @@ export default defineNuxtConfig({
     modules: [
         '@pinia/nuxt',
         '@nuxtjs/i18n',
-        'nuxt-icon'
+        'nuxt-icon',
+        '@nuxtjs/supabase'
     ],
     i18n: {
         locales: [
@@ -38,12 +39,14 @@ export default defineNuxtConfig({
             dictionary: {
                 ru: '/dictionary',
                 en: '/dictionary',
+            },
+            profile: {
+                ru: '/profile',
+                en: '/profile',
             }
         }
     },
-    buildModules: [
-      '@nuxt.js/supabase'
-    ],
+
 
     pinia: {
         autoImports: [

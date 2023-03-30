@@ -6,7 +6,8 @@
       <Icon class="input-icon__password" @click="showPass" v-if="type == 'password'" size="30" :name="`heroicons:${typeInput === 'password' ? 'eye-20-solid' : 'eye-slash-20-solid'}`"/>
     </UITheInputText>
 
-    <span :class="{'not-correct': inputItem.$error}">{{$t(inputItem.$errors[0]?.$message || '')}}  {{inputItem.$errors[0]?.$params.min}}</span>
+
+    <span v-if="inputItem.$errors.length" :class="{'not-correct': inputItem.$error}">{{$t(inputItem.$errors[0].$message)}}  {{inputItem.$errors[0]?.$params.min}}</span>
   </div>
 </template>
 

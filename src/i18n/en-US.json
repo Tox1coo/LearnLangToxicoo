@@ -1,4 +1,5 @@
 {
+    "": "",
     "menu": "Menu",
     "pages": {
         "index": "Home",
@@ -7,7 +8,9 @@
     },
     "user": {
         "login": "Login",
-        "register": "Register"
+        "register": "Register",
+        "my_profile": "My Profile",
+        "log_out": "LogOut"
     },
     "home": {
         "hero": {
@@ -87,8 +90,20 @@
             "min_length": "Minimum field size {min}",
             "alpha": "This field must contain only letters",
             "same_as": "This field must same as field password"
-        }
-    }
+        },
+        "go_to_auth": "Don't have account? Create account ",
+        "go_to_login": "Do you have account?  "
+    },
 
+    "errors-message": {
+        "Invalid login credentials": "Incorrect data has been entered. Try again",
+        "Email not confirmed": "Email not confirmed",
+        "dublicate_email": "This email is already used",
+        "Failed to fetch": "Failed to send request"
+    },
+    "correct-message": {
+        "login": "You have successfully logged in!",
+        "auth": "You have successfully registered. Confirm your email. Message sent on your email"
+    }
 
 }

@@ -9,14 +9,17 @@
   },
   "devDependencies": {
     "@nuxtjs/i18n": "^8.0.0-beta.10",
-    "nuxt": "^3.3.1"
+    "nuxt": "^3.3.1",
+    "nuxt-api-party": "^0.10.1"
   },
   "dependencies": {
     "@nuxtjs/supabase": "^0.3.1",
     "@pinia/nuxt": "^0.4.7",
     "@vuelidate/core": "^2.0.0",
     "@vuelidate/validators": "^2.0.0",
+    "axios": "^1.3.4",
     "nuxt-icon": "^0.3.3",
+    "ofetch": "^1.0.1",
     "pinia": "^2.0.33",
     "sass": "^1.59.3",
     "sass-loader": "^13.2.1"

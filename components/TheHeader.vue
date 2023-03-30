@@ -41,6 +41,9 @@
 <script setup lang="ts">
 import {useUserStore} from "~/store/User/user";
 import {useDataBase} from "~/store/DataBase/db";
+import {$fetch} from "ofetch";
+
+import {useLingvoApi} from "~/store/Lingvo/apiLingvo";
 
 const userStore = useUserStore();
 const localePath = useLocalePath()
@@ -61,6 +64,15 @@ const logOutUser = () => {
   userStore.logOutUser();
 }
 const closeSetting = () => visibleSetting = false;
+
+setTimeout(() => {
+  const response2 =  $fetch(`/api/wordList?token=${useLingvoApi().token}`, {
+    method: "get"
+  })
+  response2.then((response) => {
+    console.log(response)
+  })
+},1000)
 </script>
 
 <style lang="scss" scoped>

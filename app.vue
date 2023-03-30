@@ -21,9 +21,12 @@
 
 <script setup lang="ts">
 import {Ref} from "vue";
+import {$fetch} from "ofetch";
+import {useLingvoApi} from "~/store/Lingvo/apiLingvo";
 
 let mainIsActive:Ref<boolean> = ref(false);
 let showModal:Ref<boolean> = ref(false);
+
 
 </script>
 

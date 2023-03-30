@@ -4,8 +4,9 @@ export default defineNuxtConfig({
         '@pinia/nuxt',
         '@nuxtjs/i18n',
         'nuxt-icon',
-        '@nuxtjs/supabase'
+        '@nuxtjs/supabase',
     ],
+
     i18n: {
         locales: [
             {
@@ -46,6 +47,7 @@ export default defineNuxtConfig({
             }
         }
     },
+
 
 
     pinia: {
